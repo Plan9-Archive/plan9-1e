@@ -1,0 +1,44 @@
+dev
+	root	/
+	cons	c
+	env	e
+	mnt	M
+	bit	b
+	uart	t
+	pipe	|
+	floppy	f
+	hard	w
+	srv	s
+	dup	d
+	proc	p
+	rtc	r
+	dk	k
+	lpt	L
+	incon	i	inconsubs
+	ether	l	ether509 ether8003 ether2000 ether503 ether8390
+	ip	I	tcpinput tcpoutput tcptimer tcpif stil
+	arp	a
+	iproute	P
+	vga	v
+
+stream
+	fcall
+	ip
+	async
+	urp
+
+misc
+	cfs.root
+	kfs.root
+
+port
+	int cpuserver = 0;
+	int incondev = 0;
+	void consdebug(void){}
+
+boot
+	local
+	9600
+	19200
+	il
+	incon	"config 1 16 restart dk 256"

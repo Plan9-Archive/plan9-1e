@@ -1,0 +1,48 @@
+dev
+	root	/
+	cons	c
+	env	e
+	pipe	|
+	proc	p
+	srv	s
+	mnt	M
+	dup	d
+	bit	b
+	ether	l
+	scc	t
+	scsi	S	scsi scsibuf
+	floppy	f
+	wren	w
+	iproute	P
+	ip	I	tcpinput tcpoutput tcptimer tcpif stil
+	arp	a
+	rtc	r
+	dk	k
+#	vid	v
+	kprof	T
+stream
+	urp
+	async
+	ip
+	fcall
+misc
+	cfs.root
+	kfs.root
+port
+	int cpuserver = 0;
+	void consdebug(void){}
+	/*
+	 *  port interrupts just generate traps
+	 */
+	void devportintr(void *ur)
+	{
+		extern void trap(void*);
+		trap(ur);
+	}
+	void audiodmaintr(void){}
+boot terminal #w1/hd1
+	9600
+	19200
+	local
+	il
+	tcp

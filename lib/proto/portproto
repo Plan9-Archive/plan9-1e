@@ -1,0 +1,75 @@
+usr
+adm
+	timeconst
+	timezone
+		*
+	users
+	whois
+fd
+lib
+	namespace
+	ndb
+		local
+	font
+		bit
+			pelm
+				*
+			misc
+				6x10.0
+				6x13.0
+rc
+	+
+mail
+mnt
+	8½
+	help
+	term
+net
+proc
+srv
+tmp
+$cputype
+	init
+	bin
+		*
+		aux
+			*
+		ndb
+			cs
+			query
+		disk
+			*
+		games
+			*
+		ip
+			*
+	include
+		*
+	lib
+		*
+	mkfile
+n
+	boot
+	bootes
+	bootesother
+	bowell
+	coma
+	dump
+	pipe
+	tempel
+	kfs
+sys
+	games
+		+
+	lib
+		troff
+			term
+				*
+		newuser
+		samsave
+		tmac
+			+
+		yaccpar
+		yaccpars
+	include
+		*
